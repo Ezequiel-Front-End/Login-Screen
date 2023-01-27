@@ -1,0 +1,76 @@
+/* importação do estilo de fonte da Login Screen */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+/* configurações do html */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://s2.best-wallpaper.net/wallpaper/1280x800/1902/Astronaut-planet-stars-beautiful-space_1280x800.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* configurações do Card login  */
+.container{
+    height: 300px;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.container .Titulo{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.container .input-text{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container .input-text input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.container .input-text input::placeholder{
+    color: white;
+}
+
+.container .input-text input[type="submit"]{
+    font-weight: bolder;
+    width: 100%;
+    padding:10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+.container .input-text input[type="submit"]:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+   
+}
